@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management Dashboard</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        
+        <h2 data-aos="fade-buttom" class="navbar-heading">
+            Employee Management Dashboard
+        </h2>
+
+        <button id="add-btn">Add Employee</button>
+    </nav>
+
+    <div class="hamburger-navbar" id="ham-burger-nav">
+
+        <div class="hamburger-navlink" id="ham-link">
+            <p id="close-ham">X</p>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Salary structure</a></li>
+            <li><a href="#">Daily Task</a></li>
+            <li><a href="#">Attendance</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <button id="ham-add-btn">Add Employee</button>
+        </div>
+    </div>
+
+
+
+
+    <div class="department-sec department-buttons" id="section-department">
+
+        <div class="department-div" data-tilt data-tilt-speed="400" data-tilt-prespective="500" >
+            <section id="sales-sec" data-aos="fade-up" class="sales-dep" data-aos="fade-up" class="hr-dep" >
+                <img src="https://cdn1.vectorstock.com/i/1000x1000/24/60/sales-department-red-gradient-concept-icon-vector-32782460.jpg"
+                    alt="" />
+            </section>
+            <div class="overlay">
+                <h3 class="sec-heading" id="sales-heading">Sales Department</h3>
+                <button class="department" id="sales">Visit Department</button>
+            </div>
+        </div>
+
+        <div class="department-div" data-tilt data-tilt-speed="400" data-tilt-prespective="500">
+            <section id="technical-sec" data-aos="fade-up">
+                <img src="https://www.lds.co.uk/wp-content/uploads/2015/01/techsupport500px.jpg" alt="" />
+            </section>
+            <div class="overlay">
+                <h3 class="sec-heading">Technical Department</h3>
+                <button class="department" id="technical">Visit Department</button>
+            </div>
+        </div>
+
+        <div class="department-div" data-tilt data-tilt-speed="400" data-tilt-prespective="500">
+            <section id="hr-sec" data-aos="fade-up" class="hr-dep">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.SWdEcvggQQO4RLvrUqvXnQHaHa&pid=Api&P=0&h=220" alt="" />
+            </section>
+            <div class="overlay">
+                <h3 class="sec-heading">Hr Department</h3>
+                <button class="department" id="hr">Visit Department</button>
+            </div>
+        </div>
+
+        <div class="department-div" data-tilt data-tilt-speed="400" data-tilt-prespective="500">
+            <section id="telecaller-sec" data-aos="fade-up">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.opeRqsUFTUD1k5lCg92yWQHaHa&pid=Api&P=0&h=220" alt="" />
+            </section>
+            <div class="overlay">
+                <h3 class="sec-heading">Telecaller Department</h3>
+                <button class="department" id="telecaller">Visit Department</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="form-outer" class="form-cont">
+        <div id="form-outer" class="form-outer-class">
+            <form id="employeeForm">
+                <div id="close-form">X</div>
+
+                <div class="Form-input-div">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+                    <div id="nameError" class="error"></div>
+                </div>
+
+                <div class="Form-input-div">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <div id="genderError" class="error"></div>
+                </div>
+
+                <div class="Form-input-div">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                    <div id="emailError" class="error"></div>
+                </div>
+
+                <div class="Form-input-div">
+                    <label for="mobile">Mobile:</label>
+                    <input type="tel" id="mobile" name="mobile" required />
+                    <div id="mobileError" class="error"></div>
+                </div>
+
+                <div class="Form-input-div">
+                    <label for="salary">Salary:</label>
+                    <input type="number" id="salary" name="salary" required />
+                    <div id="salaryError" class="error"></div>
+                </div>
+
+                <div class="Form-input-div">
+                    <label for="department">Department:</label>
+                    <select id="department" name="department" required>
+                        <option value="">Select Department</option>
+                        <option value="sales">Sales</option>
+                        <option value="hr">HR</option>
+                        <option value="technical">Technical</option>
+                        <option value="telecaller">Telecaller</option>
+                    </select>
+                    <div id="departmentError" class="error"></div>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="./assets/JS/app.js"></script>
+    <script src="./assets/JS/vanilla-tilt.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 250,
+        duration: 1500,
+      });
+    </script>
+</body>
+
+</html>

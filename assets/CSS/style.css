@@ -1,0 +1,514 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #101a34;
+    overflow-x: hidden;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.form-cont {
+    width: 100%;
+    position:absolute;
+    top: 0;
+    padding: 20px;
+    border-radius: 8px;
+    display: none;
+    height: max-content;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+
+
+
+.form-outer-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  
+    z-index: 10;
+    padding-top: 60px;
+    
+}
+
+
+
+
+#employeeForm{
+    width: 500px;
+    padding: 40px;
+    background-color:#1c1c1c;
+    border-radius: 7px;
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.Form-input-div{
+    width: 100%;
+}
+
+
+#close-form{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: red;
+    font-size: 26px;
+    cursor: pointer;
+  
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: left;
+    color: white;
+}
+form input, form select {
+    width:100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    width:100%;
+    margin-top: 15px;
+}
+form button:hover {
+    background-color: #218838;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -8px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.dis-block{
+    display: block;
+}
+
+
+
+
+
+/*-----------------------------------------------navbar-------------------------------------------------------------------------------------*/
+
+
+
+.navbar{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color:black;
+    border-bottom: 1px solid #ffffff6d;
+    backdrop-filter: blur(10px);
+    background-color:#ffffff17;
+    color: #fff;
+      
+}
+
+
+
+
+.navbar-heading{
+    font-size: 25px;
+    
+}
+
+
+
+#add-btn {
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+
+
+#add-btn:hover {
+    background: linear-gradient(to left, grey, red);
+    transform: scale(1.1);
+}
+
+
+
+nav #hamburger {
+
+    padding: 2px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 5;
+    background-color: white;
+    transition: all 0.4s;
+}
+
+
+#hamburger:hover{
+    background-color: rgb(219, 218, 218);
+    transform: scale(1.1);
+}
+
+
+
+.line {
+    margin: 5px 0px;
+    width: 23px;
+    height: 2px;
+    background-color:black;
+    cursor: pointer;
+}
+
+
+
+.hamburger-navbar {
+    width: 0px;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #1c768f;
+    box-shadow: 2px 1px 12px 1px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    transition: width 0.4s linear, opacity 0.6s ease-in;
+
+
+}
+
+
+.hamburger-navlink {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-left: 0px;
+    margin-top: 80px;
+    transition: all 1s;
+    opacity: 0;
+    align-items: center;
+
+}
+
+
+.hamburger-navlink li{
+    background-color:black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 140px;
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+}
+
+
+.hamburger-navlink li:hover{
+    background-color: grey;
+   
+}
+
+
+.hamburger-navlink p {
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: red;
+    background-color: white;
+    padding: 0px 8px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+
+.hamburger-navlink button {
+    width: 120px;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:#1c1c1c;
+    color: white;
+}
+
+.hamburger-navlink button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.hamburger-navlink a {
+    color:#fff;
+}
+
+
+/* .hamburger-navlink a:hover {
+    color: rgb(10, 168, 166);
+} */
+
+
+.hamburger-logo img {
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+
+.toggle-w {
+    width: 230px;
+}
+
+
+
+.toggle2-o {
+    opacity: 1;
+}
+
+
+
+/*-----------------------------------------------------department-------------------------------------------------------------------*/
+
+
+
+
+
+.department-sec {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 60px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+
+.department-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 350px;
+}
+
+
+
+
+
+
+
+
+.view-btn:hover{
+    background: linear-gradient(to left, grey, red);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+.overlay{
+    height:0;
+    width: 100%;
+    background: linear-gradient(transparent,#267778);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.5s;
+   
+
+}
+
+
+.department-div:hover .overlay{
+    height: 100%;
+}
+
+
+.department{
+   padding: 7px 8px;
+   border-radius: 4px;
+   margin-bottom: 20px;
+   transition: all 0.5s;
+   background: linear-gradient(to right, black , white, black);
+   border: none;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+
+
+.department:hover{
+    background: linear-gradient(to right, #fff , grey, #fff);
+}
+
+
+.sec-heading{
+    color: #fff;
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+
+
+
+
+.department-sec section {
+    width: 300px;
+    height: 400px;
+    border-radius: 12px;
+    background-color: #ffffff17;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    cursor: pointer;
+    text-align: center;
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+}
+
+/* 
+.department-sec section:hover {
+    background-color:black;
+    transform: scale(1.2);
+} */
+
+
+
+
+
+.department-sec section img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+@media only screen and (max-width:950px){
+    .navbar-heading{
+        font-size: 20px;
+    }
+
+    .navbar{
+        padding: 20px;
+    }
+
+
+    .add-btn{
+        
+        font-size: 12px;
+        padding: 3px 5px;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width:750px){
+    .navbar-heading{
+        font-size: 20px;
+        display: none;
+    }
+
+
+    .department-sec section{
+        width: 280px;
+        height: 300px;
+    }
+
+
+    .department-div{
+        height: 280px;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width:450px){
+
+    .department-sec{
+        padding: 20px;
+    }
+
+
+    #employeeForm{
+        padding: 20px 10px;
+    }
+
+
+
+}

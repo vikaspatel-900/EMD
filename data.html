@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Data</title>
+    <link rel="stylesheet" href="./assets/CSS/data.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <div id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <div data-aos="fade-buttom" class="navbar-heading">
+          <li><a href="" class="department" id="sales">Sale</a></li>
+          <li><a href="" class="department" id="technical">Technical</a></li>
+          <li><a href="" class="department" id="hr">Hr</a></li>
+          <li><a href="" class="department" id="telecaller">Telecaller</a></li>
+        </div>
+
+        <p ></p>
+    </nav>
+
+    <div class="hamburger-navbar" id="ham-burger-nav">
+        <div class="hamburger-navlink" id="ham-link">
+            <p id="close-ham">X</p>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Salary structure</a></li>
+            <li><a href="#">Daily Task</a></li>
+            <li><a href="#">Attendance</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </div>
+    </div>
+
+
+
+    <div class="container" data-aos="fade-up" class="sales-dep" data-aos="fade-up" class="hr-dep">
+
+
+        <button class="back-home-btn" onclick="window.history.back()">Back to Home</button>
+        <h1  style="text-align: center; margin-bottom: 30px;"  data-aos="fade-up" class="sales-dep" data-aos="fade-left" class="hr-dep">Department Data</h1>
+
+        <div data-aos="fade-right" class="department-info" id="departmentInfo"></div>
+
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>Picture</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Email</th>
+                    <th>Mobile Number</th>
+                    <th>Salary</th>
+                    <th>Deparment</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- <h2>Department Summary</h2>
+    <table id="departmentSummary" class="department-table">
+        <thead>
+            <tr>
+                <th>Total Employees</th>
+                <th>Average Salary</th>
+            </tr> -->
+    <!-- </thead>
+        <tbody>
+            <tr>
+                <td id="totalEmployees">0</td>
+                <td id="averageSalary">$0</td>
+            </tr>
+        </tbody> -->
+    </table>
+
+    <!-- Modal for editing employee -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Edit Employee</h2>
+            <form id="editForm">
+
+                <div>
+                    <label for="editName">Name:</label>
+                    <input type="text" id="editName" required>
+                </div>
+
+                <div>
+                    <label for="editGender">Gender:</label>
+                    <select id="editGender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="editEmail">Email:</label>
+                    <input type="email" id="editEmail" required>
+                </div>
+
+                <div>
+                    <label for="editMobile">Mobile Number:</label>
+                    <input type="tel" id="editMobile" pattern="[0-9]{10}" required>
+                </div>
+
+                <div>
+                    <label for="editSalary">Salary:</label>
+                    <input type="number" id="editSalary" required>
+                </div>
+                <div>
+                    <label for="editDepartment">Department:</label>
+                    <select id="editDepartment" required>
+                        <option value="sales">Sales</option>
+                        <option value="technical">Technical</option>
+                        <option value="hr">HR</option>
+                        <option value="telecaller">Telecaller</option>
+                    </select>
+                </div>
+
+
+                <input type="hidden" id="editIndex">
+                <input type="hidden" id="previousDepartment">
+                <button type="submit" class="update-btn">Update</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./assets/JS/data.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 150,
+        duration: 1000,
+      });
+    </script>
+</body>
+
+</html>

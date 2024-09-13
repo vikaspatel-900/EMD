@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*-------------------------------------------------navbar-------------------------------------------------------------------------------------*/
+
+
+
+
+.navbar{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: #1c768f;
+    color:black;
+    border-bottom: 1px solid #fff;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+      
+}
+
+
+
+
+.navbar-heading{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+column-gap: 60px;
+}
+
+
+.navbar-heading a{
+    color: white;
+    font-size: 20px;
+}
+
+
+
+#add-btn {
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+
+
+#add-btn:hover {
+    background: linear-gradient(to left, grey, red);
+    transform: scale(1.1);
+}
+
+
+
+nav #hamburger {
+
+    padding: 2px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 5;
+    background-color: white;
+}
+
+
+#hamburger:hover{
+    background-color: rgb(197, 193, 193);
+}
+
+
+.line {
+    margin: 5px 0px;
+    width: 23px;
+    height: 2px;
+    background-color:black;
+    cursor: pointer;
+}
+
+
+
+.hamburger-navbar {
+    width: 0px;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    background-color: #1c768f;
+    box-shadow: 2px 1px 12px 1px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    transition: width 0.4s linear, opacity 0.6s ease-in;
+
+
+}
+
+
+.hamburger-navlink {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-left: 0px;
+    margin-top: 80px;
+    transition: all 1s;
+    opacity: 0;
+    align-items: center;
+
+}
+
+
+.hamburger-navlink li{
+    background-color:black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 140px;
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+}
+
+
+.hamburger-navlink li:hover{
+    background-color: grey;
+   
+}
+
+
+.hamburger-navlink p {
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: red;
+    background-color: white;
+    padding: 0px 8px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+
+.hamburger-navlink button {
+    width: 120px;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+
+
+.hamburger-navlink a {
+    color:#fff;
+}
+
+
+/* .hamburger-navlink a:hover {
+    color: rgb(10, 168, 166);
+} */
+
+
+.hamburger-logo img {
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+
+.toggle-w {
+    width: 230px;
+}
+
+
+
+.toggle2-o {
+    opacity: 1;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.container {
+    width: 97%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+    top: 100px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+
+th {
+    background-color: #1c768f;
+    color: white;
+    height: 40px;
+}
+
+
+
+table, th, td {
+    border: 1px solid #ccc;
+    border: 1px solid black;
+}
+th, td {
+    padding:5px 8px;
+    text-align: center;
+
+ 
+    
+}
+
+
+tbody td img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+
+.image-tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+tr{
+    transition: all 0.4s;
+}
+
+tr:hover{
+    background-color: rgba(128, 128, 128, 0.282);
+}
+
+
+
+tr .action-buttons{
+    width: 150px;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+} 
+
+ tr:hover .action-buttons{
+    width: 150px;
+    opacity: 1;
+}
+
+.action-buttons button {
+    padding: 5px;
+    cursor: pointer;
+    
+}
+
+.edit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.4s;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+.edit-btn:hover{
+    transform: scale(1.2);
+}
+
+
+.back-home-btn{
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #1c768f;
+    color: white;
+   
+}
+
+
+.back-home-btn:hover{
+    background-color: #fff;
+    color: black;
+}
+
+
+
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.4s;
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+
+
+
+.delete-btn:hover{
+   transform: scale(1.2);
+}
+
+
+.department-info {
+    margin-bottom: 20px;
+}
+
+
+.department-table {
+    margin-top: 20px;
+}
+
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    /* padding-top: 60px; */
+    
+    
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 80px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 8px;
+    background-color: black;
+    color: #fff;
+}
+
+#editForm{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 500px;
+    padding: 30px;
+    
+}
+
+
+#editForm div{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#editForm div input,select{
+    height: 34px;
+    padding: 0px 5px;
+    border-radius: 4px;
+    border: none;
+    font-size: 15px;
+}
+
+
+#editForm div label{
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+
+.update-btn{
+    height: 35px;
+    background-color: rgb(105, 214, 38);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 35px;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
