@@ -26,4 +26,4 @@ This project is an **Employee Management Dashboard** that allows users to manage
 4. Employee data will be saved in local storage.
 
 ### GitHub Repository:
-[Link to the Repository](https://github.com/your-username/your-repository-name)
+[Link to the Repository]([https://github.com/your-username/your-repository-name](https://github.com/vikaspatel-900/Employee-Management-Dashboard.git))
