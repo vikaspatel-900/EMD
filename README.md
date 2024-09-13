@@ -1,6 +1,6 @@
 # Employee Management Dashboard
 
-This project is an **Employee Management Dashboard**. It allows users to manage employees department-wise. The dashboard includes features for adding, viewing, editing, and deleting employees. It is fully responsive and features animations with a clean user interface for easy interaction.
+This project is an **Employee Management Dashboard** . It allows users to manage employees department-wise. The dashboard includes features for adding, viewing, editing, and deleting employees. It is fully responsive and features animations with a clean user interface for easy interaction.
 
 ### Features:
 - **Add Employee**: Employees can be added to the dashboard with proper validation. Each employee is assigned to a department.
@@ -31,4 +31,4 @@ This project is an **Employee Management Dashboard**. It allows users to manage 
 - **JavaScript**
 
 ### GitHub Repository:
-[Link to the Repository](https://github.com/your-username/your-repository-name)
+[Employee Management Dashboard GitHub Repository](https://github.com/vikaspatel-900/Employee-Management-Dashboard.git)
