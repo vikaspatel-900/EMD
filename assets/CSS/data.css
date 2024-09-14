@@ -411,6 +411,7 @@ tr .action-buttons{
     background-color: #fefefe;
     margin: 80px auto;
     padding: 20px;
+    padding-top: 50px;
     border: 1px solid #888;
     width: 80%;
     width: 500px;
@@ -429,7 +430,7 @@ tr .action-buttons{
     flex-direction: column;
     row-gap: 25px;
     width: 500px;
-    padding: 30px;
+    padding:30px;
     
 }
 
@@ -546,6 +547,43 @@ tr .action-buttons{
 
     .dropdown i{
         display: block;
+    }
+
+
+    #editForm{
+        width: 400px;
+        padding: 30px 20px;
+    }
+
+    .modal-content{
+        width: 400px;
+    }
+
+
+
+}
+
+
+
+@media only screen and (max-width:500px){
+
+    #editForm{
+        width: 320px;
+        padding: 30px 20px;
+    }
+
+    .modal-content{
+        width: 320px;
+    }
+
+
+    #editForm div label{
+        font-size: 14px;
+    }
+
+
+    #editForm div input{
+        font-size: 14px;
     }
 }
 
