@@ -236,6 +236,7 @@ th {
 table, th, td {
     border: 1px solid #ccc;
     border: 1px solid black;
+    
 }
 th, td {
     padding:5px 8px;
@@ -445,4 +446,130 @@ tr .action-buttons{
     color: red;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+
+
+
+
+@media only screen and (max-width:1000px){
+    table, th, td{
+        font-size: 14px;
+    }
+}
+
+
+
+@media only screen and (max-width:815px){
+    table, th, td{
+        font-size: 12px;
+    }
+
+
+    tbody td img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+
+@media only screen and (max-width:700px){
+    .table-responsive h1{
+        display: none;
+    }
+
+
+    .department-info{
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+
+    .back-home-btn{
+        font-size: 10px;
+        padding: 6px 4px;
+    }
+
+
+    .navbar-heading{
+        display: none;
+    }
+
+
+    .tr .action-buttons{
+        opacity: 1;
+    }
+
+
+    .navbar{
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Wrapper for the table to make it scrollable on small screens */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* for smooth scrolling on touch devices */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+th {
+    background-color: #1c768f;
+    color: white;
+}
+
+/* Media Query for screens smaller than or equal to 350px */
+@media (max-width: 300px) {
+    th, td {
+        font-size: 0.7rem; /* Reduce font size for small screens */
+        padding: 6px; /* Adjust padding for smaller space */
+    }
+
+    /* Force table cells to stack vertically for better readability */
+    table thead {
+        display: none; /* Hide the table header on very small screens */
+    }
+
+    table, tbody, tr, td {
+        display: block;
+        width: 100%;
+    }
+
+    td {
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td::before {
+        content: attr(data-label); /* Use attribute for labels */
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
 }
