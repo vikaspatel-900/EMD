@@ -74,6 +74,41 @@ column-gap: 60px;
 }
 
 
+.dropdown i{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    
+}
+
+
+.dropdownUl{
+    width: 150px;
+    height: max-content;
+    background-color: #1c768f;
+    color: black;
+    position: absolute;
+    list-style: none;
+    right: 5px;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    padding: 15px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+}
+
+
+.dropdown ul li a{
+    color: white;
+}
+
+
 
 nav #hamburger {
 
@@ -506,6 +541,11 @@ tr .action-buttons{
 
     .navbar{
         padding: 20px;
+    }
+
+
+    .dropdown i{
+        display: block;
     }
 }
 

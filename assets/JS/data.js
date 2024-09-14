@@ -171,6 +171,8 @@ let hamburger__nav = document.getElementById("ham-burger-nav");
 let hamburger = document.getElementById("hamburger");
 let ham_link = document.getElementById("ham-link");
 let close_ham = document.getElementById("close-ham");
+let three_dots=document.getElementById("three-dots")
+let dropdown_ul=document.getElementById("dropdown-ul")
 
 
 
@@ -190,3 +192,8 @@ close_ham.addEventListener("click", function () {
   ham_link.classList.toggle("toggle2-o");
   event.stopPropagation();
 });
+
+
+three_dots.addEventListener("click", function(){
+    dropdown_ul.classList.toggle("toggle2-o")
+})
