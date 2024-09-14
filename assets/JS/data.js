@@ -195,5 +195,5 @@ close_ham.addEventListener("click", function () {
 
 
 three_dots.addEventListener("click", function(){
-    dropdown_ul.classList.toggle("toggle2-o")
+    dropdown_ul.classList.toggle("toggle-block")
 })
